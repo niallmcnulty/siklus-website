@@ -151,71 +151,6 @@
       pointer-events: none;
     }
 
-    /* About */
-    .about {
-      padding: 7rem 2rem;
-      background: var(--gray-light);
-      color: var(--navy);
-    }
-
-    .about-inner {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .section-label {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--coral);
-      margin-bottom: 1.25rem;
-    }
-
-    .about h2 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-weight: 700;
-      font-size: clamp(2rem, 4vw, 2.75rem);
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      margin-bottom: 1.5rem;
-      color: var(--navy);
-    }
-
-    .about p {
-      font-size: 1.1rem;
-      line-height: 1.75;
-      color: #475569;
-      margin-bottom: 1.25rem;
-    }
-
-    .about p:last-of-type { margin-bottom: 0; }
-
-    .detail-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-      padding-top: 3rem;
-      border-top: 1px solid #e2e8f0;
-    }
-
-    .detail-item h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-weight: 700;
-      font-size: 1rem;
-      color: var(--navy);
-      margin-bottom: 0.5rem;
-    }
-
-    .detail-item p {
-      font-size: 0.95rem;
-      line-height: 1.6;
-      color: #64748b;
-      margin-bottom: 0;
-    }
-
     /* Contact */
     .contact {
       padding: 7rem 2rem;
@@ -297,7 +232,7 @@
       .nav-links { gap: 1.5rem; }
       .nav-links a { font-size: 0.85rem; }
       .hero { padding: 5rem 1.5rem; }
-      .about, .contact { padding: 4.5rem 1.5rem; }
+      .contact { padding: 4.5rem 1.5rem; }
       .detail-grid { grid-template-columns: 1fr; gap: 1.5rem; }
     }
   </style>
@@ -307,7 +242,6 @@
   <nav>
     <a href="#" class="logo">siklus</a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -316,25 +250,7 @@
     <div class="hero-content">
       <h1>Building with AI</h1>
       <p>Products with embedded intelligence, designed for the real world.</p>
-      <a href="#about" class="btn">Learn more</a>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <div class="about-inner fade-up">
-      <div class="section-label">About</div>
-      <h2>AI products that work where it matters</h2>
-      <p>Siklus is based in Cape Town, South Africa. We design and build products with AI capabilities embedded from the ground up, not bolted on as an afterthought.</p>
-      <div class="detail-grid">
-        <div class="detail-item">
-          <h3>Based in</h3>
-          <p>Cape Town, South Africa</p>
-        </div>
-        <div class="detail-item">
-          <h3>Focus</h3>
-          <p>AI-embedded products for education and assessment</p>
-        </div>
-      </div>
+      <a href="#contact" class="btn">Get in touch</a>
     </div>
   </section>
 
