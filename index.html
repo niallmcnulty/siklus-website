@@ -151,6 +151,81 @@
       pointer-events: none;
     }
 
+    /* Projects */
+    .projects {
+      padding: 7rem 2rem;
+      background: linear-gradient(170deg, var(--navy-deep) 0%, var(--navy) 100%);
+      position: relative;
+    }
+
+    .projects-inner {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
+    }
+
+    .projects .section-label { color: var(--coral); }
+
+    .projects h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 3rem;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: border-color 0.2s ease, background 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .project-card:hover {
+      border-color: var(--coral);
+      background: rgba(224, 122, 95, 0.06);
+    }
+
+    .project-card h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 1.25rem;
+      letter-spacing: -0.01em;
+    }
+
+    .project-card p {
+      color: var(--gray-text);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .project-card .project-url {
+      color: var(--coral);
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-top: auto;
+    }
+
     /* Contact */
     .contact {
       padding: 7rem 2rem;
@@ -242,6 +317,7 @@
   <nav>
     <a href="#" class="logo">siklus</a>
     <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -251,6 +327,30 @@
       <h1>Building with AI</h1>
       <p>Products with embedded intelligence, designed for the real world.</p>
       <a href="#contact" class="btn">Get in touch</a>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="projects-inner">
+      <div class="section-label fade-up">Projects</div>
+      <h2 class="fade-up">What we're building</h2>
+      <div class="project-grid">
+        <a href="https://international.siklus.io" target="_blank" rel="noopener" class="project-card fade-up">
+          <h3>AI Readiness Assessment</h3>
+          <p>Evaluate your organisation's preparedness for AI implementation with a structured readiness assessment.</p>
+          <span class="project-url">international.siklus.io &rarr;</span>
+        </a>
+        <a href="https://policy.siklus.io/policy" target="_blank" rel="noopener" class="project-card fade-up">
+          <h3>School AI Policy Generator</h3>
+          <p>Create a tailored AI policy for your school in 30 minutes. Answer guided questions, get a professional Word document.</p>
+          <span class="project-url">policy.siklus.io &rarr;</span>
+        </a>
+        <a href="https://capsplanner.siklus.io" target="_blank" rel="noopener" class="project-card fade-up">
+          <h3>CAPS Weekly Lesson Planner</h3>
+          <p>AI-powered weekly lesson plans aligned to the South African CAPS curriculum, generated in minutes.</p>
+          <span class="project-url">capsplanner.siklus.io &rarr;</span>
+        </a>
+      </div>
     </div>
   </section>
 
